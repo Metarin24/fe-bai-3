@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2><b>Câu 1: Bài tập về Iframe</b></h2>
+    <p><b>Yêu cầu: </b>Vào trang google map, tìm 1 địa điểm yêu thích và nhúng thẻ iframe của google map vào website. Để hiển thị được như sau:</p>
+    <p><b>Lưu ý: </b>Thử tự lên google tìm hiểu cách nhúng bản đồ vào website.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.0926371280025!2d106.80281137469873!3d10.880558489274618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d8a5568c997f%3A0xdeac05f17a166e0c!2sHo%20Chi%20Minh%20city%20University%20of%20Technology!5e0!3m2!1sen!2s!4v1686442308761!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h2><b>Câu 2: Bài tập về form</b></h2>
+    <p><b>Yêu cầu: </b>Tạo form <b>đăng kí</b> như form bên dưới. Phải có cả thẻ form bọc bên ngoài. Khi click vào thẻ label thì phải focus vào đúng ô input tương ứng với label đó. Các ô input phải yêu cầu nhập nội dung mới cho Đăng ký.</p>
+    <form action = "" target = "_blank" method = "post">
+        <label for="fullname">Họ tên:</label>
+        <br>
+        <input type = "text" id = "fullname" name = "full_name" placeholder = "Ví dụ: levana" required>
+        <br>
+        <label for = "email">Email:</label>
+        <br>
+        <input type = "email" id = "email" name = "full_email" placeholder = "Ví dụ: levana@gmail.com" required>
+        <br>
+        <label for = "pass">Mật khẩu:</label>
+        <br>
+        <input type = "password" id = "pass" name = "pass_word" required>
+        <br>
+        <button type = "submit">Đăng ký</button>
+    </form>
+    <p><b>Yêu cầu: </b>Tạo form <strong>tìm kiếm</strong> như dưới đây: (Phải có cả thẻ form bọc bên ngoài. Phải nhập nội dung mới cho bấm Tìm kiếm.)</p>
+    <form>
+        <input type = "text" placeholder = "Nhập nội dung tìm kiếm" required>
+        <button type = "submit">Tìm kiếm</button>
+    </form>
+    <h2><b>Câu 3: Bài tập để ôn lại kiến thức về form</b></h2>
+    <p><b>Yêu cầu: </b>Vẽ lại các thẻ dưới đây:</p>
+    <p><b>_ Thẻ input:</b></p>
+    <form>
+        <label for = "text">Kiểu text:</label> <br>
+        <input type = "text" id = "text" name = "full_name" placeholder = "Nhập họ tên" required> <br>
+        <label for = "email1">Kiểu email:</label> <br>
+        <input type = "email" id = "email1" name = "full_email" placeholder = "Nhập email" required> <br>
+        <label for = "pass1">Kiểu password:</label> <br>
+        <input type = "password" id = "pass1" name = "full_pass" required> <br>
+        <label for = "number">Kiểu number:</label> <br>
+        <input type = "number" id = "number" name = "full_number" required> <br>
+        <label for = "date">Kiểu date:</label> <br>
+        <input type = "date" id = "date" name = "full_date" required> <br>
+        <label for = "time">Kiểu time:</label> <br>
+        <input type = "time" id = "time" name = "full_time" required> <br>
+        <label for = "file">Kiểu file:</label> <br>
+        <input type = "file" id = "file" name = "file"> <br>
+        <p>Kiểu radio:</p>
+        <input type = "radio" id = "nam" name = "gioitinh" value = "Nam">
+        <label for = "nam">Nam</label> <br> 
+        <input type = "radio" id = "nu" name = "gioitinh" valude = "Nu">
+        <label for = "nu">Nữ</label> <br>
+        <input type = "radio" id = "khac" name = "gioitinh" value = "Khac">
+        <label for = "khac">Khác</label> <br>
+        <p>Kiểu range:</p>
+        <label for = "vol">Âm lượng (min = 0 và max = 100):</label>
+        <br>
+        <input type = "range" id = "vol" name = "vol" min = "0" max = "100">
+        <p>Thẻ color</p>
+        <input type = "color">
+    </form>
+    <p><b>_ Thẻ select</b></p>
+    <form>
+        <label for = "loai">Chọn danh mục</label> <br>
+        <select id = "loai" name = "loai">
+            <option value = "quan">Quần</option>
+            <option value = "ao">Áo</option>
+            <option value = mu>Mũ</option>
+            <option value = "khan">Khăn</option>
+        </select>
+    </form>
+    <p><b>- Thẻ textarea (có cols = 30 và rows = 10):</b></p>
+    <form>
+        <textarea cols = "30" rows = "10"></textarea>
+    </form>
+</body>
+</html>
